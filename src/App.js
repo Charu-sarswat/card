@@ -9,8 +9,6 @@ import "./App.css";
 
 function App() {
   const [filters, setFilters] = useState({});
-  const [properties, setProperties] = useState(propertiesData);
-
   // Filtering logic here
 
   return (
