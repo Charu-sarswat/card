@@ -220,3 +220,119 @@
 .carousel-section .thumbnails img.selected {
   border: 2px solid #1976d2;
 }
+
+@media (max-width: 1024px) {
+  .main-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .carousel-section,
+  .info-section {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .details-and-description {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .details-card,
+  .description-card {
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    padding: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .listings {
+    padding: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .property-card {
+    padding: 8px;
+  }
+
+  .property-details-container {
+    padding: 8px;
+  }
+
+  .main-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-section,
+  .info-section {
+    max-width: 100%;
+    min-width: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .summary-card,
+  .user-card,
+  .posted-in-card,
+  .details-card,
+  .description-card {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .details-and-description {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .details-card,
+  .description-card {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .carousel-section .main-image {
+    height: 180px;
+  }
+
+  .carousel-section .main-image img {
+    max-height: 160px;
+  }
+
+  .carousel-section .thumbnails img {
+    width: 32px;
+    height: 22px;
+  }
+
+  .user-card img {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+
+  .details-card td {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  .description-card {
+    font-size: 12px;
+  }
+}
